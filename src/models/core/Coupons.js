@@ -1,7 +1,6 @@
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../../connections';
 import BaseModel from './BaseModel';
-
 /**
  * Define Customer Model
  * Tạo mã coupons

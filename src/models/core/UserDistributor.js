@@ -17,7 +17,6 @@ export default class UserDistributor extends BaseModel {
         UserDistributor.hasOne(UserRole, {as: 'role', foreignKey: 'userid', hooks: true, onDelete: 'CASCADE', onUpdate : 'NO ACTION'});
     }
 }
-
 /**
  * Attributes model
  */

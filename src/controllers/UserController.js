@@ -1,4 +1,4 @@
-import { MidUser, MidDistributor } from '../models/middle';
+import {  } from '../models/middle';
 import { uploadMultiMedia } from '../libs/upload';
 
 class UserController {

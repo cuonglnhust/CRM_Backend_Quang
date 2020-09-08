@@ -1,13 +1,9 @@
 import { Op } from 'sequelize';
 import { UserDistributor, Distributor, DistributorInfoPayment, DistributorGem, DistributerKey, Order, NotifyDetail } from '../core';
-import MidUser from './MidUser';
-import MidPermission from './MidPermission';
-import MidOrder from './MidOrder';
 import { ERROR_MESSAGE } from '../../config/error';
 import { hashPassword } from '../../libs/encrypt';
 import { generateRandomCode } from '../../libs/random';
 import { sequelize } from '../../connections';
-import { MidKey } from '.';
 
 class MidDistributor {
 

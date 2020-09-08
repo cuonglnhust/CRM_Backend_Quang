@@ -1,6 +1,6 @@
 var ejs = require('ejs');
 var path = require('path');
-import { MidCustomer, MidDistributor } from '../models/middle'
+import {MidDistributor } from '../models/middle'
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey("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");
@@ -33,10 +33,10 @@ export const sendMailActiveOrder = async(data) => {
     packageName: ''
   };
 
-  const customerData = await MidCustomer.getCustomerByCondition({ id: data.userid });
-  if (!customerData) {
-    return;
-  }
+  // const customerData = await MidCustomer.getCustomerByCondition({ id: data.userid });
+  // if (!customerData) {
+  //   return;
+  // }
 
   if (data.distributor_id) {
     const distributorData = await MidDistributor.getDistributorById(data.distributor_id);

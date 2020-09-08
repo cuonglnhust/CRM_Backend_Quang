@@ -14,7 +14,7 @@ import { UserRole } from '../core';
 export default class UserDistributor extends BaseModel {
 
     static association() {
-        UserDistributor.hasOne(UserRole, {as: 'role', foreignKey: 'userid', hooks: true, onDelete: 'CASCADE', onUpdate : 'NO ACTION'});
+       
     }
 }
 

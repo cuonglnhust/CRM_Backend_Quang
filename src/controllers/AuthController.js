@@ -6,11 +6,6 @@ class AuthController {
         return MidUser.loginUser(req.body);
     }
 
-    loginswitch(req, res) {
-        const { userData } = req;
-        return MidUser.loginUserSwitch(req.body, userData);
-    }
-
     forgotPassword(req, res) {
         return MidUser.forgotPassword(req.body);
     }
